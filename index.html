@@ -1,0 +1,35 @@
+<html>
+
+	<head>
+		<title>HOLI APP</title>
+		<style>
+		
+		*{font-size:50px}
+
+		</style>
+
+		<script>
+		
+		function change_color()
+		{
+		event.preventDefault();
+		let colors = ["red","green","blue","pink","grey","yellow"]
+		let num = parseInt(Math.random() * colors.length)
+		document.body.style.backgroundColor = colors[num];
+		}
+		
+		</script>
+	</head>
+
+	<body>
+	<center>
+		<h1> HOLI HAI </h1>
+		<form onsubmit = "change_color()">
+			
+		<input type ="submit" value = "Click Here" >
+
+		</form>
+	</center>	
+	</body>
+
+</html>
